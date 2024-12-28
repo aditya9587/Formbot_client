@@ -1,0 +1,131 @@
+.container{
+  padding: 2%;
+  background-color: #1F1F23;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0% 5%;
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo p{
+  color: white;
+  font-weight: 600;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+  width: 20%;
+}
+
+.signIn{
+  background-color: transparent;
+  color: #7EA6FF;
+  border: 1px solid #7EA6FF;
+  border-radius: 5px;
+  padding: 2%;
+}
+.create{
+  background-color: #1A5FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2%;
+  margin-right: 2%;
+}
+
+.hero{
+  width: 100%;
+  height: 80vh;
+  padding: 0% 5%;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+  text-align: center;
+
+
+}
+.svg1{
+  width: 20%;
+}
+.text h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#4B83FF,#B794F4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text p{
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.text button{
+  background-color: #1A5FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 2% 0%;
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 10%;
+  font-size: 0.8rem;
+  height: 30vh;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.footerContent{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  gap: 10px ;
+}
+
+.footerContent ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.community{
+  padding-top: 11px;
+}
+
+.ftrLogo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

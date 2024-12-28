@@ -1,0 +1,146 @@
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 5%;
+}
+.arrow{
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+.dropdown{
+  position: relative;
+  border: 1px solid #1D1D1D;
+  font-weight: normal;
+  display: block;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.dropdownContent{
+  position: absolute;
+  width: 100%;
+  border: 1px solid #1D1D1D;
+  border-top: none;
+  display: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 1;
+}
+
+.active .dropdownContent{
+  display: block;
+}
+
+.dropbtn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.active .arrow{
+  transform: rotate(180deg);
+}
+.dropdownContent a{
+  text-decoration: none;
+  display: block;
+  height: 2rem;
+  text-align:justify;
+  padding: 5%;
+
+}
+
+.logout{
+  color:#FFA54C;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.share{
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #1A5FFF;
+  color: white;
+}
+.folder{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newFolder{
+  display: flex;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 1%;
+  background-color: grey;
+  width: 20%;
+  height: 3rem;
+  cursor: pointer;
+  /* flex-wrap: wrap; */
+}
+.newFile{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.newFiles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 12px;
+  padding: 1%;
+  background-color: #1A5FFF;
+  width: 20%;
+  height: 40vh;
+  color: white;
+}
+
+.add{
+  width: 20px;
+  height: 20px;
+  margin: 0% 2%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1% 1% 1% 10%;
+}
+
+.folderItem{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 3rem;
+  align-items: center;
+  /* width: max-content; */
+  border: 1px solid #1D1D1D;
+  cursor: pointer;
+  padding: 0% 2%;
+  border-radius: 10px;
+  /* flex-wrap: wrap; */
+}
+.selectedFolder{
+  background-color: #1A5FFF;
+  color: white;
+}
+.delete{
+  width: 20px;
+  height: 20px;
+  margin: 0% 2%;
+}

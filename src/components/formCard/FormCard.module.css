@@ -1,0 +1,30 @@
+.formCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* height: 100%; */
+}
+.card{
+  border: 2px solid #1D1D1D;
+  height: 100%;
+  padding: 2%;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  /* width: 100%; */
+
+}
+
+.delete{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

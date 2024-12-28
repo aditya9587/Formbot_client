@@ -1,0 +1,58 @@
+.settings{
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  /* justify-content: center; */
+  padding: 5%;
+  gap: 10px;
+  height: 100vh;
+  /* width: 100vw; */
+}
+.formSetting{
+  width: 30%;
+}
+.inputBox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  height: 3rem;
+ margin: 4% 0%;
+ width: 100%;
+ padding: 2%;
+ border-radius: 10px;
+}
+.inputBox input{
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 80%;
+}
+
+.update{
+  height: 3rem;
+  width: 100%;
+  border-radius: 16px;
+  background-color: #1A5FFF;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 2% 0%;
+}
+
+.logout{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+}
+.logout button{
+  height: 3rem;
+  border: none;
+  outline: none;
+  color: #CF3636;
+  background:none;
+  font-size: large;
+}

@@ -1,0 +1,116 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0% 2%;
+  border-bottom: 2px solid #1D1D1D;
+}
+.formName{
+  /* height: 1rem; */
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #1D1D1D;
+  padding: 0.5%;
+}
+.Actionbutton{
+  display: flex;
+  gap: 10px;
+}
+
+.Actionbutton button{
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.shareButtons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.save{
+  background-color: rgba(74, 222, 128, 0.8);
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+
+.share{
+  background-color: #1A5FFF;
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+
+.close{
+  width: 20px;
+  height: 20px;
+}
+
+
+.formButtons{
+  width: 25%;
+  background-color: #1A5FFF;
+  /* margin: 2%; */
+  height: 80vh;
+  padding: 2%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* font-weight: lighter; */
+}
+
+.bubbles{
+ width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bubbles button{
+  width: 45%;
+  text-align: start;
+
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin: 2%;
+}
+
+.formInput{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  /* justify-content: center; */
+}
+.input{
+  border: 1px solid #1D1D1D;
+  border-radius: 10px;
+  width: 25%;
+  height: 4rem;
+}
