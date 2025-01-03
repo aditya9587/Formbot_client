@@ -10,6 +10,7 @@ import Form from "./pages/Form/Form.jsx";
 import Share from "./pages/share/Share.jsx";
 
 import { AppProvider } from "./context/index.jsx";
+import "./App.css";
 
 function App() {
   return (

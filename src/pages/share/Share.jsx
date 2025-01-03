@@ -47,7 +47,6 @@ function Share() {
         e && e.preventDefault();
         if (!key.includes("Button") && !(key in formResponse)) return;
         await saveFormResponseApi(wid, formResponse);
-        console.log(formResponse)
 
         setDisableFlagArr(prevArray => {
             const newArray = [...prevArray];

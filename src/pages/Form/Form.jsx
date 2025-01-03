@@ -84,7 +84,7 @@ export default function Form() {
     },
   ];
 
-  const { fileName, setFileName, selectedFolderId } = useContext(AppContext);
+  const { fileName, setFileName, selectedFolderId,theme, toggleTheme } = useContext(AppContext);
   const [searchParams] = useSearchParams();
 
   const [formId, setFormId] = useState(searchParams.get("wid"));
@@ -127,7 +127,6 @@ export default function Form() {
   async function handleFormSave() {
     if (formId) {
       if (updateFormSequence) {
-        console.log("update form api called");
         await updateFormSequence();
       }
     } else {
@@ -137,7 +136,6 @@ export default function Form() {
 
   //handle Add box
   const handleButtonClick = (data) => {
-    console.log("buttonclick", formId);
     if (!formId) {
       toast.error("Enter form name and hit save.");
       return;
@@ -216,10 +214,7 @@ export default function Form() {
     setFormBoxError(newErrors);
 
     if (!error) {
-      console.log("Payload:", { formSequence: formBox });
       const data = await updateFormApi(formId, { formSequence: formBox });
-      console.log("formBox", formBox);
-      console.log("data", data);
       if (data) toast.success("Form updated successfully.");
     }
   };
@@ -262,7 +257,7 @@ export default function Form() {
         </div>
 
         <div className={style.shareButtons}>
-          <p>Light Dark</p>
+          <p onClick={toggleTheme}>Light Dark</p>
           <button className={style.share} onClick={copyFormLink}>share</button>
           <button className={style.save} type="submit" onClick={handleFormSave}>
             save

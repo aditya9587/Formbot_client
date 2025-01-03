@@ -1,5 +1,5 @@
-.space {
-  background: #1F1F23;
+/* .space {
+  background-color: #1F1F23;
   overflow-y: auto;
 }
 
@@ -7,7 +7,7 @@
   position: fixed;
   margin: 80px 0 20px 20px;
   padding: 20px;
-  /* background: #18181B; */
+  background: #18181B;
   width: 350px;
   height: calc(100vh - 150px);
   border: 1px solid var(--border-color);
@@ -24,13 +24,13 @@
 
 .sidebar button {
   font-weight: normal;
-  background: #27272A;
+  background-color: #27272A;
   color: var(--dark-text);
   display: flex;
   align-items: center;
   gap: 15px;
-}
-
+} */
+/* 
 .layout {
   display: flex;
   align-items: center;
@@ -47,14 +47,16 @@
 .layout .endCard {
   width: 100%;
   padding-bottom: 1px;
-}
+} */
 
 .card {
   position: relative;
   width: 350px;
   padding: 20px;
   border-radius: 10px;
-  background: #18181B;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -81,7 +83,7 @@
   position: absolute;
   top: -15px;
   right: -15px;
-  background: #444444;
+  background-color: #444444;
   height: 35px;
   width: 35px;
   display: flex;
@@ -104,7 +106,9 @@
 
 .inputBox input {
   padding: 10px 40px !important;
-  background: #1F1F23 !important;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border: none !important;
   border-radius: 5px !important;
 }

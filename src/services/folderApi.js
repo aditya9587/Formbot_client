@@ -2,7 +2,6 @@ import axios from "axios";
 
 export const createFolder = async (data) => {
   try {
-    console.log("data",data);
     const token = localStorage.getItem("token");
     const response = await axios.post(
       `${import.meta.env.VITE_API_URL}/api/folder/create`,

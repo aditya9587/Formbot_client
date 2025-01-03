@@ -96,7 +96,6 @@ export const shareFormApi = async (formId) => {
 };
 
 export const saveFormResponseApi = async (formId, formResponse) => {
-  console.log(formResponse)
   try {
       const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/form/response/${formId}`, formResponse);
 

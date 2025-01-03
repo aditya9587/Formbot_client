@@ -7,7 +7,6 @@
   border-bottom: 2px solid #1D1D1D;
 }
 .formName{
-  /* height: 1rem; */
   border-radius: 8px;
   outline: none;
   border: 1px solid #1D1D1D;
@@ -31,6 +30,10 @@
   align-items: center;
   gap: 10px;
 }
+.shareButtons p{
+  cursor: pointer;
+}
+
 
 .save{
   background-color: rgba(74, 222, 128, 0.8);
@@ -60,15 +63,13 @@
 
 .formButtons{
   width: 25%;
-  background-color: #1A5FFF;
-  /* margin: 2%; */
   height: 80vh;
   padding: 2%;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* font-weight: lighter; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .bubbles{
@@ -81,7 +82,6 @@
 .bubbles button{
   width: 45%;
   text-align: start;
-
   height: 2rem;
   border: none;
   cursor: pointer;
@@ -106,7 +106,6 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  /* justify-content: center; */
 }
 .input{
   border: 1px solid #1D1D1D;

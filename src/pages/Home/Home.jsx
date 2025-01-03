@@ -15,7 +15,7 @@ import DeleteModal from "../../components/DeleteModal/DeleteModal";
 export default function Home() {
   const navigate = useNavigate();
 
-  const { folderName, setFolder, selectedFolderId, setSelectedFolderId } =
+  const { folderName, setFolder,theme,toggleTheme, selectedFolderId, setSelectedFolderId } =
     useContext(AppContext);
 
   const [AllFolders, setAllFolders] = useState([]);
@@ -40,7 +40,6 @@ export default function Home() {
       const response = await createFolder({ folderName });
       handleFolderModalClose();
       fetchFolders();
-      console.log(response);
     } catch (error) {
       console.error(error);
     }
@@ -64,7 +63,6 @@ export default function Home() {
   const fetchFolders = async () => {
     try {
       const response = await getFolder();
-      console.log(response);
       setAllFolders(response.data);
     } catch (error) {
       console.error("Error fetching folders:", error);
@@ -72,18 +70,7 @@ export default function Home() {
   };
 
   function handleFolderClick(folderId) {
-    // setFolderOpen(!folderOpen);  
-    // navigate(`/home/${folderId}`);
-    // setSelectedFolderId((prevfolderId) => prevfolderId === folderId ? null : folderId);
-    // if ( selectedFolderId !== folderId) {
-    //   setSelectedFolderId(folderId);
-    // } else {
-    //   setSelectedFolderId((prevfolderId) => prevfolderId === folderId ? null : folderId);
-    // }
-    // console.log(folderId);
-
-    setSelectedFolderId(folderId)
-
+    setSelectedFolderId(folderId);
   }
 
   useEffect(() => {
@@ -93,7 +80,6 @@ export default function Home() {
   return (
     <div className={style.home}>
       <div className={style.navbar}>
-        <h1>Navbar</h1>
 
         <div
           className={`${style.dropdown} ${isDropdownOpen ? style.active : ""}`}
@@ -109,12 +95,13 @@ export default function Home() {
             <Link to={"/setting"} className={style.settings}>
               Settings
             </Link>
-            <Link to="/Logout" className={style.logout}>
+            <Link to="/" className={style.logout} onClick={() => localStorage.removeItem("token")} >
               Logout
             </Link>
           </div>
-        </div>
 
+        </div>
+        <button onClick={toggleTheme} className={style.mode}>{theme === "light" ? "Dark" : "Light"} Mode</button>
         <button className={style.share}>Share</button>
       </div>
       <hr />
@@ -150,7 +137,10 @@ export default function Home() {
         </div>
 
         <div className={style.newFile}>
-          <div className={style.newFiles} onClick={() => navigate(`/form/?fid=${selectedFolderId}`)}>
+          <div
+            className={style.newFiles}
+            onClick={() => navigate(`/form/?fid=${selectedFolderId}`)}
+          >
             <img src="/icons/Add.png" alt="" className={style.add} />
             <p> Create a typeBot</p>
           </div>

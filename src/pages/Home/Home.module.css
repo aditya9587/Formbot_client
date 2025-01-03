@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 5%;
+  margin-left: 40%;
+  padding: 0.5% 5%;
 }
 .arrow{
   width: 10px;
@@ -133,7 +134,7 @@
   cursor: pointer;
   padding: 0% 2%;
   border-radius: 10px;
-  /* flex-wrap: wrap; */
+
 }
 .selectedFolder{
   background-color: #1A5FFF;
@@ -143,4 +144,10 @@
   width: 20px;
   height: 20px;
   margin: 0% 2%;
+}
+.mode{
+  height: 2rem;
+  width: 5rem;
+  border-radius: 14px;
+  border: none;
 }

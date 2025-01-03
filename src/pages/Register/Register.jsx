@@ -66,7 +66,6 @@ export default function Register() {
   };
   const handleSignup = async (e) => {
     e.preventDefault();
-    console.log("Validating Signup Form:", signupForm);
     if (validateSignup()) {
       try {
         const response = await userSignup(signupForm);

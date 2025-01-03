@@ -9,7 +9,6 @@ export default function FormCard() {
 
   const { selectedFolderId, setSelectedFolderId} = useContext(AppContext);
 
-  // const [form, setForm] = useState([]);
   const [allFiles, setAllFiles] = useState([]);
   const [filteredFiles, setFilteredFiles] = useState([]);
 
@@ -21,10 +20,8 @@ export default function FormCard() {
   }, []);
 
   useEffect(() => {
-    console.log("Selected folder id in form" ,selectedFolderId)
     if(selectedFolderId) {
       const filteredForm = allFiles.filter((form) => form.folderId === selectedFolderId);
-      console.log("filteredForm", filteredForm)
       setFilteredFiles(filteredForm);
 
     } else {
@@ -39,7 +36,6 @@ export default function FormCard() {
       setAllFiles(response.data);
       setFilteredFiles(response.data);
 
-      console.log(response);
     } catch (error) {
       console.log(error);
     }
