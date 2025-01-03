@@ -27,3 +27,34 @@ export const userLogin = async (data) => {
   }
 
 }
+
+export const userDetails = async () => {
+  try {
+    const token = localStorage.getItem("token");
+    const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/user`,{
+      headers: {
+        Authorization: `${token}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    });
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+export const updateUserDetails = async (data) => {
+  try {
+    const token = localStorage.getItem("token");
+    const response = await axios.put(`${import.meta.env.VITE_API_URL}/api/update`, data,{
+      headers: {
+        Authorization: `${token}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    });
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+}

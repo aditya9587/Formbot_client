@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Home from "./pages/Home/Home";
 import Settings from "./components/Settings/Settings";
 import Form from "./pages/Form/Form.jsx";
+import Share from "./pages/share/Share.jsx";
 
 import { AppProvider } from "./context/index.jsx";
 
@@ -19,7 +20,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/setting" element={<Settings />} />
-        <Route path="/form/:id" element={<Form />} />
+        <Route path="/form/" element={<Form />} />
+        <Route path="/share/:wid" element={<Share />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

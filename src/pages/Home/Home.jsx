@@ -150,7 +150,7 @@ export default function Home() {
         </div>
 
         <div className={style.newFile}>
-          <div className={style.newFiles} onClick={() => navigate(`/form/${selectedFolderId}`)}>
+          <div className={style.newFiles} onClick={() => navigate(`/form/?fid=${selectedFolderId}`)}>
             <img src="/icons/Add.png" alt="" className={style.add} />
             <p> Create a typeBot</p>
           </div>

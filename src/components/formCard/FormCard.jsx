@@ -50,7 +50,7 @@ export default function FormCard() {
         <div
           key={form._id}
           className={style.card}
-          onClick={() => navigate(`/form/${form._id}`)}
+          onClick={() => navigate(`/form/?wid=${form._id}`)}
         >
           <img src="/icons/delete.png" alt="" className={style.delete} />
           <h3>{form.formName}</h3>
